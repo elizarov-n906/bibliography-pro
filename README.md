@@ -68,14 +68,10 @@
 </p>
 
 <p align="center">
-  <img src="assets/screenshot-2.jpg" alt="Настройки плагина" width="80%">
-  <br><em>Глобальные настройки плагина</em>
+  <img src="assets/screenshot-2.jpg" alt="Пример отображения плагина библиографии на сайте" width="80%">
+  <br><em>Пример отображения плагина библиографии на сайте</em>
 </p>
 
-<p align="center">
-  <img src="assets/screenshot-3.jpg" alt="Настройки плагина" width="80%">
-  <br><em>Глобальные настройки плагина</em>
-</p>
 
 
 <p align="center">
