@@ -140,6 +140,7 @@
 Если у вас возникли вопросы или предложения по улучшению плагина:
 
 *   **GitHub Issues:** [Сообщить об ошибке](https://github.com/elizarov-n906/bibliography-pro/issues)
+*   **Site plugin:** [Вопросы и предложения]([https://github.com/elizarov-n906/bibliography-pro/issues](https://zaplata.ru/forum/web/bibliography-pro))
 *   **Email:** [zaplata_ru@mail.ru](mailto:zaplata_ru@mail.ru) 
 
 ---
