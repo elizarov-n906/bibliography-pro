@@ -1,0 +1,95 @@
+/* ============================================
+   АДМИНКА: МЕТАБОКС
+   ============================================ */
+.bp-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.bp-row input[type="text"]{flex:1}
+.bp-num{min-width:28px;height:28px;line-height:28px;text-align:center;background:#0073aa;color:#fff;border-radius:50%;font-weight:bold;font-size:13px}
+.bp-add, .bp-add-note{margin-top:10px}
+.bp-hint{margin-top:12px;color:#666;font-size:13px}
+
+/* Кнопки "Добавить 10 строк" */
+.bp-add-note-10, .bp-add-10{margin-top:0px !important;margin-left:8px !important;background:#fff !important;border-color:#0073aa !important;color:#0073aa !important}
+.bp-add-note-10:hover, .bp-add-10:hover{background:#0073aa !important;color:#fff !important}
+
+/* Кнопка переключения ссылки */
+.bp-toggle-link{min-width:70px !important;font-size:12px !important}
+.bp-toggle-link.bp-active{background:#0073aa !important;color:#fff !important;border-color:#0073aa !important}
+
+/* Кнопка вставки библиографии */
+.bp-insert-cite{font-family:monospace !important;font-weight:bold !important;min-width:36px !important;color:#0073aa !important;border-color:#0073aa !important;background:#f0f8ff !important}
+.bp-insert-cite:hover{background:#0073aa !important;color:#fff !important}
+
+/* Кнопка вставки примечания */
+.bp-insert-note{font-size:11px !important;font-weight:bold !important;color:#d63638 !important;border-color:#d63638 !important;background:#fde8e8 !important}
+.bp-insert-note:hover{background:#d63638 !important;color:#fff !important}
+
+/* ============================================
+   АДМИНКА: БЛОК НАСТРОЕК СТАТЬИ
+   ============================================ */
+.bp-settings-section{margin-bottom:20px;padding:15px;background:#fff8e1;border:1px solid #ffd54f;border-radius:6px}
+.bp-settings-table{width:100%;border-collapse:collapse}
+.bp-settings-table th{text-align:left;padding:8px 10px 8px 0;vertical-align:top;font-weight:600;width:250px}
+.bp-settings-table td{padding:5px 0}
+.bp-settings-table label{display:block;margin-bottom:5px;cursor:pointer}
+.bp-settings-table input[type="radio"]{margin-right:8px}
+
+/* ============================================
+   АДМИНКА: ДВЕ СЕКЦИИ
+   ============================================ */
+.bp-section{margin-bottom:25px;padding:15px;background:#f9f9f9;border:1px solid #ddd;border-radius:6px}
+.bp-section-bib{background:#f0f6fc;border-color:#c3d0e0}
+.bp-section-title{margin:0 0 12px;font-size:16px;padding-bottom:8px;border-bottom:2px solid #eee}
+.bp-section-notes .bp-section-title{border-color:#f0b0b0}
+.bp-section-bib .bp-section-title{border-color:#0073aa}
+
+/* ============================================
+   АДМИНКА: НАСТРОЙКИ
+   ============================================ */
+.bp-css-editor{width:100%;min-height:400px;font-family:monospace;font-size:13px;line-height:1.5;padding:10px;border:1px solid #ddd;border-radius:4px;resize:vertical}
+.bp-css-hint{margin-top:8px;color:#666;font-size:12px}
+
+/* ============================================
+   САЙТ: ССЫЛКИ БИБЛИОГРАФИИ [1][2]
+   ============================================ */
+.bp-link{color:#0073aa;border-bottom:1px dashed #0073aa;cursor:pointer;font-weight:bold;padding:0 3px;transition:background .2s}
+.bp-link:hover{background:#e7f3ff;border-radius:3px}
+
+/* ============================================
+   САЙТ: ПРИМЕЧАНИЯ (надстрочные цифры)
+   ============================================ */
+.bp-note-link{color:#222;font-size:0.85em;vertical-align:super;cursor:pointer;font-weight:bold;padding:2px 4px;line-height:1.2;position:relative;display:inline-block;border-bottom:1px dashed #222;transition:background .2s}
+.bp-note-link::before{content:"";position:absolute;top:-2px;left:-2px;right:-2px;bottom:-2px}
+.bp-note-link:hover{background:#f0f0f0;border-radius:2px}
+
+/* ============================================
+   САЙТ: ВСПЛЫВАЮЩЕЕ ОКНО
+   ============================================ */
+.bp-popup{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);z-index:99999;display:none;align-items:center;justify-content:center}
+.bp-popup-box{background:#fff;padding:25px 30px;border-radius:8px;max-width:550px;width:90%;position:relative;box-shadow:0 5px 30px rgba(0,0,0,.3)}
+.bp-popup-close{position:absolute;top:8px;right:15px;font-size:28px;cursor:pointer;color:#999;line-height:1}
+.bp-popup-close:hover{color:#333}
+.bp-popup-text{}
+.bp-popup-text b{color:#0073aa;margin-right:8px}
+.bp-popup-text.bp-note-text b{color:#222}
+
+/* ============================================
+   САЙТ: БЛОКИ ВНИЗУ СТАТЬИ
+   ============================================ */
+.bp-bib{margin-top:40px;padding-top:25px;border-top:2px solid #eee}
+.bp-bib h3{margin-bottom:15px;font-size:22px}
+.bp-bib ol{padding-left:30px;margin:0}
+.bp-bib li{margin-bottom:12px;line-height:1.6}
+.bp-bib li a{color:#0073aa;text-decoration:underline;word-break:break-all}
+.bp-bib li a:hover{color:#005177}
+.bp-bib.bp-notes li{color:#333}
+
+/* ============================================
+   АДАПТИВНОСТЬ
+   ============================================ */
+@media(max-width:600px){
+    .bp-popup-box{padding:20px;width:95%}
+    .bp-popup-text{font-size:14px}
+    .bp-row{flex-wrap:wrap}
+    .bp-row input[type="text"]{width:100%;order:-1}
+    .bp-settings-table th{width:100%;display:block;padding-bottom:2px}
+}
